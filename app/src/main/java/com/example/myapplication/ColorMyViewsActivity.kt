@@ -27,17 +27,14 @@ class ColorMyViewsActivity : AppCompatActivity() {
 
         tvBoxThree.setOnClickListener() {
             tvBoxThreeValid = true;
-            //Toast.makeText(this, "" + tvBoxThreeValid, Toast.LENGTH_LONG).show();
         }
 
         tvBoxFour.setOnClickListener() {
             tvBoxFourValid = true;
-            //Toast.makeText(this, "" + tvBoxFourValid, Toast.LENGTH_LONG).show();
         }
 
         tvBoxFive.setOnClickListener() {
             tvBoxFiveValid = true;
-            //Toast.makeText(this, "" + tvBoxFiveValid, Toast.LENGTH_LONG).show();
         }
 
         btnRed.setOnClickListener() {
@@ -56,7 +53,6 @@ class ColorMyViewsActivity : AppCompatActivity() {
             tvBoxThreeValid = false;
             tvBoxFourValid = false;
             tvBoxFiveValid = false;
-            //Toast.makeText(this, "Red", Toast.LENGTH_LONG).show();
         }
 
         btnYellow.setOnClickListener() {
@@ -75,7 +71,6 @@ class ColorMyViewsActivity : AppCompatActivity() {
             tvBoxThreeValid = false;
             tvBoxFourValid = false;
             tvBoxFiveValid = false;
-            //Toast.makeText(this, "Yellow", Toast.LENGTH_LONG).show();
         }
 
         btnGreen.setOnClickListener() {
@@ -94,7 +89,6 @@ class ColorMyViewsActivity : AppCompatActivity() {
             tvBoxThreeValid = false;
             tvBoxFourValid = false;
             tvBoxFiveValid = false;
-            //Toast.makeText(this, "Green", Toast.LENGTH_LONG).show();
         }
     }
 }
