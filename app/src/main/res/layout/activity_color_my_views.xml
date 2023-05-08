@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorMyViewsActivity">
+
+    <TextView
+        android:id="@+id/tv_boxone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#88C34A"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dimGray"
+        android:text="Box One"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_boxtwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#88C34A"
+        android:gravity="center_horizontal"
+        android:text="Box Two"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkgray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_boxfive"
+        app:layout_constraintEnd_toStartOf="@id/tv_boxthree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boxone" />
+
+    <TextView
+        android:id="@+id/tv_boxthree"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Box Three"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_boxtwo"
+        app:layout_constraintTop_toBottomOf="@id/tv_boxone" />
+
+    <TextView
+        android:id="@+id/tv_boxfour"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Box Four"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_boxtwo"
+        app:layout_constraintTop_toBottomOf="@id/tv_boxthree" />
+
+    <TextView
+        android:id="@+id/tv_boxfive"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:text="Box Five"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/tv_boxtwo"
+        app:layout_constraintTop_toBottomOf="@id/tv_boxfour" />
+
+    <TextView
+        android:id="@+id/textViewPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="How to play:"
+        android:gravity="center"
+        android:textColor="@color/dimGray"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewResposta"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/tv_boxtwo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boxtwo" />
+
+    <TextView
+        android:id="@+id/textViewResposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tap the screen and buttons"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_boxfive"
+        app:layout_constraintStart_toEndOf="@+id/textViewPergunta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boxfive" />
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="RED"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yellow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="GREEN"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_yellow" />
+
+    <Button
+        android:id="@+id/btn_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/darkgray"
+        android:text="YELLOW"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_green"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toEndOf="@+id/btn_red" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
